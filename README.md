@@ -25,7 +25,7 @@ The blake2 hashes for each ptau file are found [here](https://github.com/iden3/s
 ## 2. Compile the Circuits
 Use the command
 ```sh
-circom -o=./build/withdraw_from_subset_simple.circom --r1cs --sym --wasm
+circom -o=./build --r1cs --sym --wasm
 ```
 
 ## 2. Contribute
