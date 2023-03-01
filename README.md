@@ -45,8 +45,8 @@ You will have to check the latest number that hasn't been used yet by inspecting
 You would run the following command. If you're a kind anon, then change the numbers in the readme when you're done.
 ```
 snarkjs zkc \
-  ./zkeys/withdraw_from_subset_simple_0002.zkey \
-  ./zkeys/withdraw_from_subset_simple_0003.zkey
+  ./zkeys/withdraw_from_subset_simple_0006.zkey \
+  ./zkeys/withdraw_from_subset_simple_0007.zkey
 ```
 Do this from the root directory to generate the next contribution. Then, commit and push to your fork. We'll use a random blockhash for the beacon portion of the ceremony.
 
