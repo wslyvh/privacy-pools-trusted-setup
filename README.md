@@ -10,6 +10,12 @@ Again, I recommend that you definitely should have read the [snarkjs](https://gi
  - [rust](https://www.rust-lang.org/tools/install) / [circom2](https://docs.circom.io/getting-started/installation/)
 
 # Steps
+## 1. Setup
+ - Download the ptau file, and compile the circuit. Do these by running
+```
+bash scripts/download.sh && bash scripts/build.sh
+```
+
 ## 1. Verify and/or download the ptau file.
  - To verify the hash, run
 
@@ -25,7 +31,7 @@ The blake2 hashes for each ptau file are found [here](https://github.com/iden3/s
 ## 2. Compile the Circuits
 Use the command
 ```sh
-circom -o=./build ./circuits/withdraw_from_subset_simple.circom —r1cs etc
+circom -o=./build ./circuits/withdraw_from_subset_simple.circom --r1cs --wasm --sym
 ```
 
 ## 2. Contribute
@@ -36,18 +42,28 @@ You will have to check the latest number that hasn't been used yet by inspecting
 /zkeys/withdraw_from_subset_simple_0002.zkey
 ```
 
-You would run
+You would run the following command. If you're a kind anon, then change the numbers in the readme when you're done.
 ```
-snarkjs zkc ./zkeys/withdraw_from_subset_simple_0002.zkey ./zkeys/withdraw_from_subset_simple_0003.zkey
+snarkjs zkc \
+  ./zkeys/withdraw_from_subset_simple_0002.zkey \
+  ./zkeys/withdraw_from_subset_simple_0003.zkey
 ```
-from the root directory to generate the next contribution. Then, commit and push to your fork. We'll use a random blockhash for the beacon portion of the ceremony.
+Do this from the root directory to generate the next contribution. Then, commit and push to your fork. We'll use a random blockhash for the beacon portion of the ceremony.
 
-#### DO NOT SHARE THE ENTROPY WITH ANYONE! Your input is a random value that can be used to deterministically break the proving keys if they are gathered with all other contributions.
+## DO NOT SHARE THE ENTROPY WITH ANYONE! Your input is a random value that can be used to deterministically break the proving keys if they are gathered with all other contributions.
 
-The last step of the ceremony is to initiate a pull request with your newly generated contribution file. The file should be saved to the [/zkeys](./zkeys) directory, before submitting a pull request.
+The last step of the ceremony is to initiate a pull request with your newly generated contribution file. The file should be saved to the [zkeys](./zkeys) directory, before submitting a pull request.
 
+You can verify the contributions by checking against the latest (which should be yours)
+```
+snarkjs zkv \
+  ./build/withdraw_from_subset_simple.r1cs \
+  ./ptau/powersOfTau28_hez_final_14.ptau \
+  ./zkey/withdraw_from_subset_simple_0003.zkey
+```
+Make sure to change the `0003` to your zkeys number.
 
 Wallah! That's it.
 
 # Last Steps
-Pull to your own fork, have someone merge into your branch.
+Pull request to your own fork, have someone merge into main branch.
