@@ -59,7 +59,7 @@ You can verify the contributions by checking against the latest (which should be
 snarkjs zkv \
   ./build/withdraw_from_subset_simple.r1cs \
   ./ptau/powersOfTau28_hez_final_14.ptau \
-  ./zkey/withdraw_from_subset_simple_0003.zkey
+  ./zkeys/withdraw_from_subset_simple_0003.zkey
 ```
 Make sure to change the `0003` to your zkeys number.
 
