@@ -25,7 +25,7 @@ The blake2 hashes for each ptau file are found [here](https://github.com/iden3/s
 ## 2. Compile the Circuits
 Use the command
 ```sh
-circom -o=./build --r1cs --sym --wasm
+circom -o=./build ./circuits/withdraw_from_subset_simple.circom —r1cs etc
 ```
 
 ## 2. Contribute
@@ -38,7 +38,7 @@ You will have to check the latest number that hasn't been used yet by inspecting
 
 You would run
 ```
-snarkjs zkc ./zkeys/withdraw_0002.zkey ./zkeys/withdraw_0003.zkey
+snarkjs zkc ./zkeys/withdraw_from_subset_simple_0002.zkey ./zkeys/withdraw_from_subset_simple_0003.zkey
 ```
 from the root directory to generate the next contribution. Then, commit and push to your fork. We'll use a random blockhash for the beacon portion of the ceremony.
 
