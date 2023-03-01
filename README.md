@@ -67,3 +67,45 @@ Wallah! That's it.
 
 # Last Steps
 Pull request to your own fork, have someone merge into main branch.
+
+## Latest Contribution Hashes Snapshot
+Each of these files have been verified individually.
+```
+[INFO]  snarkJS: Circuit Hash:
+                85228df9 7eff386d e76a4e08 82e4d68d
+                0f699a86 e161e1e0 f939eb26 2af74e4b
+                23f6a075 1973dc55 54a088a7 ac286188
+                9ecb5050 3d7a2dc8 a8a832b8 3c1ae8ab
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #5 :
+                f760906f fc311509 91d73cb6 104a2548
+                f9dfe24c 09331d87 95dec2e3 ba656a13
+                6f003df9 ea35a697 9a6e0a90 2f6ba474
+                966c3189 a8778a89 2f149743 1f2cd1a0
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #4 :
+                d1411103 65d1bdd2 3a185ede ba05f20a
+                f2413f44 9d3d5543 aade1cec 0020d80f
+                b81f3d89 f5922131 4d9b14ec 2d6f87a2
+                71f7911d 55bf14c1 d3058393 5a1a4eac
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #3 :
+                836632c5 bb975810 c1a64b90 5e0cea73
+                f7f3b2ca bb1b2d14 aeaec8b8 2b148f42
+                73f7c434 15c57ae4 efc88d5e c367b128
+                bedd7fdc 4c618021 97369702 f01a4b74
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #2 :
+                aaef97aa 77387a01 3da73510 b423302f
+                649e2ede 864dfcfa 808e9ea0 69e07579
+                3971e85c 419b5529 f7718226 e5a94012
+                13778667 c4e316e7 b6cb0907 2bf76faa
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: contribution #1 :
+                cef921fd cfaf8b0a a1f8e19e 5bb87309
+                fb5a4302 b2e4c33d 07e9c48d 57e3ae4e
+                e89422d5 f46b65fe 219a0e6b fb1613e1
+                316bc704 4f537cb7 4f65f889 2b237b08
+[INFO]  snarkJS: -------------------------
+[INFO]  snarkJS: ZKey Ok!
+```
